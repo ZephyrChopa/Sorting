@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/untitled.dir/src/main.cpp.o CMakeFiles/untitled.dir/src/sort.cpp.o CMakeFiles/untitled.dir/src/random_array_gen.cpp.o  -o untitled 
