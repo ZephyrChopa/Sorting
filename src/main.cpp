@@ -13,6 +13,7 @@ int main() {
 
     int a[n];
     rando::random(a, n);
+
     /*
     cout << "------Sorting array with bubble_sort------" << endl;
     auto start_bubble = chrono::high_resolution_clock::now();
@@ -21,13 +22,20 @@ int main() {
     auto duration_bubble = chrono::duration_cast<chrono::microseconds>(stop_bubble - start_bubble);
     cout << "Time taken: "<<  duration_bubble.count() << "ms" << endl;
     */
+/*
     cout << "------Sorting array with insertion_sort------" << endl;
     auto start_insertion = chrono::high_resolution_clock::now();
     sort::insertion_sort(a, n);
     auto stop_insertion = chrono::high_resolution_clock::now();
     auto duration_insertion = chrono::duration_cast<chrono::microseconds>(stop_insertion - start_insertion);
     cout << "Time taken: "<< duration_insertion.count() << "ms" << endl;
-
+*/
+    cout << "------Sorting array with selection_sort------" << endl;
+    auto start_selection = chrono::high_resolution_clock::now();
+    sort::selection_sort(a, n);
+    auto stop_selection = chrono::high_resolution_clock::now();
+    auto duration_selection = chrono::duration_cast<chrono::microseconds>(stop_selection - start_selection);
+    cout << "Time taken: "<< duration_selection.count() << "ms" << endl;
 
     for (const auto& val : a)
         cout << val << endl;

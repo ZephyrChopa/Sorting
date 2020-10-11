@@ -31,3 +31,20 @@ void sort::insertion_sort(int *array, int n) {
     }
 }
 
+void sort::selection_sort(int *array, int n) {
+    for (int i = 0; i < n; ++i) {
+        for (int j = i + 1; j < n; ++j) {
+            if(array[i] > array[j]) {
+                swap(&array[i], &array[j]);
+                continue;
+            }
+        }
+    }
+}
+
+
+void sort::swap(int *x, int *y) {
+    int tmp{*x};
+    *x = *y;
+    *y = tmp;
+}
